@@ -1,0 +1,20 @@
+
+<div class="mdc-typography--body1" style="margin-left: 50px;">
+    <h1 class="mdc-typography--headline1">Jonathan Uhlmann</h1>
+    
+</div>
+<script>
+$(document).ready(function() {
+      var url = "https://data.cityofchicago.org/resource/9rg7-mz9y.json";
+      $.get(url, function(response) {
+      console.log(response);
+      var data = response;
+      initMap(response);
+      
+
+    
+      }); 
+    
+        
+});
+</script>
